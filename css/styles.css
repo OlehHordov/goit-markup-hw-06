@@ -281,7 +281,15 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
+strong {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03;
+  color: rgba(33, 33, 33, 1);
+  text-align: center;
+  margin-top: 40px;
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -298,6 +306,8 @@ body {
 }
 
 .modal-icon {
+  width: 11px;
+  height: 11px;
   background-color: var(--hero-color);
   color: var(--accent-color);
 }
