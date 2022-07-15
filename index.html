@@ -50,19 +50,54 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <strong>Оставьте свои данные, мы вам перезвоним</strong>
-            <label for="name">Имя
-            <input type="name">
-            </label>
-            <label for="phone">Телефон
-            <input type="phone">
-            </label>
-            <label for="email">Почта
-            <input type="email">
-            </label>
-            <label for="name">Имя
-            <input type="name">
-            </label>
+            <form class="modal-form" autocomplete="on">
+                <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+                <div class="modal-contact-list name" >
+                <label class="modal-label">
+                        <span class="modal-text">Имя</span>
+                        <input class="user-modal" type="name">
+                         <svg class="modal-icon-input" width="12" height="12">
+                            <use href="./images/img/icons/icons.svg#icon-person"></use>
+                         </svg>
+                </label>
+               </div>
+               <div class="modal-contact-list">
+                    <label class="modal-label">
+                        <span class="modal-text">Телефон</span>
+                <input class="user-modal" type="phone">
+               <svg class="modal-icon-input" width="13" height="13">
+                            <use href="./images/img/icons/icons.svg#icon-phone-form"></use>
+                         </svg>
+                </label>
+                </div>
+                <div class="modal-contact-list">
+                <label class="modal-label">
+                <span class="modal-text">Почта</span>
+                <input class="user-modal" type="email">
+                <svg class="modal-icon-input" width="15" height="12">
+                            <use href="./images/img/icons/icons.svg#icon-email"></use>
+                         </svg>
+                </label>
+                </div>
+                <label for="modal-label">
+                <span class="modal-text">Комментарий</span>
+                <textarea name="modal-comment" id="" cols="30" rows="10"
+                placeholder="Введите текст"></textarea>
+                </label>
+                <label class="form-checkbox">
+                    <input class="visually-hidden form-checkbox-input" type="checkbox" name="checkbox " checked/>
+                    <span class="form-checkbox-custom">
+                        <svg class="form-checkbox-icon" width="11" height="8">
+                            <use href="./images/img/icons/icons.svg#icon-check">
+                            </use>
+                        </svg>
+                    </span>
+                        <span class="text-agreed">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a> </span>
+                </label>
+               <button class="modal-btn" type="submit">
+                Отправить
+               </button>
+            </form>
             <button class="modal-close-btn" type="button" data-modal-close>
             <svg width="11" height="11">
                 <use href="./images/img/icons/icons.svg#icon-close"></use>
@@ -367,6 +402,23 @@
                     </li>
                 </ul>
             </div>
+        
+
+        <div class="footer-subscribe">
+            <p class="footer-title">Подпишитесь на рассылку</p>
+            <form class="footer-form">
+              <div class="footer-mail-form">
+              <label class="lable-mail">
+                <input class="input-mail" type="email" name="mail" placeholder="E-mail">
+              </label>
+              </div>
+              <button class="footer-btn" type="submit">Подписаться
+                <svg class="footer-icon-btn" width="24" height="24">
+                  <use href="./images/img/icons/icons.svg#icon-sendmail"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
