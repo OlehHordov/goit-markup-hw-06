@@ -288,10 +288,6 @@ textarea {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-
-.modal-form {
-  /* padding: 40px; */
-}
 .name {
   margin-top: 12px;
 }
@@ -401,6 +397,10 @@ textarea {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
+
+.user-modal:focus + .modal-icon-accent {
+  fill: var(--accent-color);
+}
 .modal-icon-input {
   position: absolute;
   left: 12px;
@@ -425,7 +425,9 @@ textarea {
   border-radius: 50%;
   cursor: pointer;
 }
-
+.modal-close-btn:hover {
+  fill: var(--accent-color);
+}
 .modal-icon {
   width: 11px;
   height: 11px;
