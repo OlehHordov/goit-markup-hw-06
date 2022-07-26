@@ -276,6 +276,7 @@ textarea {
 }
 
 .modal {
+  padding: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -289,7 +290,7 @@ textarea {
 }
 
 .modal-form {
-  padding: 40px;
+  /* padding: 40px; */
 }
 .name {
   margin-top: 12px;
@@ -363,7 +364,7 @@ textarea {
   padding-right: 6px;
   padding-bottom: 4px;
   padding-left: 42px;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -372,8 +373,15 @@ textarea {
   transition-timing-function: var(--transition-timing-function);
 }
 .modal-comment {
-  /* display: block; */
+  padding: 12px 16px 12px 16px;
   width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+}
+.modal-comment:hover,
+.modal-comment:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 .modal-btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -398,11 +406,10 @@ textarea {
   left: 12px;
   top: 15px;
   transform: translateY(50%, -50%);
-  fill: currentColor;
 }
 .modal-icon-input:hover,
 .modal-icon-input:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 .modal-close-btn {
   position: absolute;
@@ -769,7 +776,7 @@ textarea {
 }
 
 .footer-subscribe {
-  margin-left: 93px;
+  margin-left: auto;
   position: relative;
 }
 
